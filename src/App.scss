@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Josefin+Sans:ital,wght@0,500;1,300&family=Roboto:wght@300;500&display=swap');
+
+@import './styles/dialogSection.scss';
+@import './styles/chatsSection.scss';
+@import './styles/searchSection.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  font-weight: 300;
+  color: rgb(54, 54, 54);
+}
+
+.App {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+}
+
+.leftSide {
+  display: block;
+  flex: 1;
+  background-color: #f9f9f9;
+  border: #c8c8ca 0.5px solid;
+}
+
+.rightSide {
+  position: relative;
+  flex: 2;
+}
+
+.fixedContainer {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.navButton {
+  display: none;
+}
+

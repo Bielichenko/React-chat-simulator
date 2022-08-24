@@ -1,0 +1,90 @@
+.chatsSection {
+  position: relative;
+  bottom: 0;
+  padding-top: 20px;
+}
+
+.chatsTitle {
+  padding: 0 20px;
+  font-size: 20px;
+
+  font-weight: bold;
+  color: #0fc57c;
+}
+
+.contactBox {
+  display: flex;
+  align-items: center;
+
+  padding: 20px 20px;
+
+  border-bottom: #c8c8ca 1px solid;
+}
+
+
+.contactBox:hover {
+  background-color: #e5e5e5;
+}
+
+.contactLink {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.contactData {
+  color: rgb(107, 106, 106);
+  width: 65%;
+}
+
+.imgContainer {
+  position: relative;
+
+  margin-right: 20px;
+  transition: 0.3s;
+}
+
+.contactImg--main {
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+
+  transition: 0.3s;
+}
+
+.imgContainer:hover {
+  transform: scale(1.2);
+}
+
+.imgContainer:hover .contactImg--main {
+  box-shadow: 1px 1px 10px #3b3b3b;
+}
+
+.check {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-100%);
+  width: 20px;
+
+  border-radius: 50%;
+}
+
+.contactName {
+  color: #000000;
+}
+
+
+.lastMessageText {
+  margin-top: 5px;
+}
+
+.lastMessageTime {
+  min-width: min-content;
+  display: flex;
+  justify-content: end;
+  align-self: end;
+
+  width: 45%;
+
+  font-size: 12px;
+}

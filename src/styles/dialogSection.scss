@@ -1,0 +1,140 @@
+.dialogSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contactInfoSection {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+
+  padding: 10px;
+
+  background-color:  #f9f9f9;
+  border-bottom: #c8c8ca 0.5px solid; 
+}
+
+.contactImg {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.contactName--dialog {
+  font-size: 20px;
+  font-weight: bold;
+
+  color: #3b3b3b;
+}
+
+.messagesSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 100%;
+
+  padding: 20px;
+
+  background-color: white;
+}
+
+.messageBox {
+  display: flex;
+  direction: column;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.messageBox--sent {
+  display: flex;
+  direction: column;
+  align-self: end;
+}
+
+.messageData {
+  margin-left: 10px;
+}
+
+.messageText--received {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+  padding: 10px;
+  
+  border-radius: 20px;
+  background-color: #3b4252;
+  color: white;
+}
+
+.messageText--sent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  margin-bottom: 10px;
+  padding: 10px;
+  
+  border-radius: 20px;
+  background-color: #e0e1e2;
+  color: black;
+}
+
+.messageTime {
+  align-self: end;
+  margin-left: 10px;
+
+  font-size: 12px;
+}
+
+.userInputSection {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+
+  padding: 20px;
+
+  background-color: #eeecec;
+  border-top: #c8c8ca 0.5px solid; 
+}
+
+.userInputContainer {
+  position: relative;
+  width: 95%;
+}
+
+.userInput {
+  height: 50px;
+  width: 100%;
+
+  border: #c8c8ca 0.5px solid;
+  border-radius: 20px;
+
+  padding: 15px;
+}
+
+.sendMessageIcon {
+  position: absolute;
+  transform: translate(-105%, 5%);
+
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.chooseContact {
+  position: absolute;
+  left: 35%;
+  bottom: 50%;
+
+  font-size: 20px;
+  font-weight: bold;
+  color: #0fc57c;
+}
