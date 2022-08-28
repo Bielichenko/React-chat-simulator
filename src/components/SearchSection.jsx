@@ -1,15 +1,22 @@
 import React from 'react';
 
-export const SearchSection = ({ input, setInput, setIsContactsVisible, }) => {
+export const SearchSection = ({ userName, userImg, input, setInput, }) => {
 
   return (
     <div className='searchSection'>
-      <div className='imgContainer imgContainer--user'>
-        <img src={require(`../images/0.png`)} alt="user-logo" className='contactImg contactImg--main contactImg--user' />
-        <img
-          className='check'
-          src={require(`../images/check.png`)}
-          alt="checkImg" />
+      <div className="userInfoSection">
+        <div className='imgContainer imgContainer--user'>
+          <img
+            src={userImg}
+            alt="user-logo"
+            className='contactImg contactImg--main contactImg--user'
+          />
+          <img
+            className='check'
+            src={require(`../images/check.png`)}
+            alt="checkImg" />
+        </div>
+        <p>{userName}</p>
       </div>
       <div className='searchContainer'>
         <input

@@ -35,16 +35,16 @@ export const ChatsSection = ({ searchQuery, setContacts, setIsContactsVisible })
 
   function isThisDayIsToday(messageDate) {
     const currentDate = new Date().toLocaleString().split(', ')[0];
-    return messageDate === currentDate
+    return messageDate === currentDate;
   }
 
   allContacts.sort((contactX, contactY) => {
     if (contactX.messages.length && contactY.messages.length) {
       if (+getLastMessage(contactY).date.slice(0, 2) - +getLastMessage(contactX).date.slice(0, 2) > 0) {
-        return 1
+        return 1;
       }
       if (+getLastMessage(contactY).date.slice(0, 2) - +getLastMessage(contactX).date.slice(0, 2) < 0) {
-        return -1
+        return -1;
       }
       return getLastMessage(contactY).sumOfSec - getLastMessage(contactX).sumOfSec;
     }
@@ -62,7 +62,7 @@ export const ChatsSection = ({ searchQuery, setContacts, setIsContactsVisible })
             className='contactLink'
             to={contactObj.id}
             key={contactObj.id}
-            onClick={() => {setIsContactsVisible(false)}}
+            onClick={() => {setIsContactsVisible(false  )}}
           >
             <div >
               {contactObj.name.toLowerCase().includes(searchQuery.toLowerCase()) || contactObj.messages

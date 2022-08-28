@@ -18,8 +18,15 @@ body {
 
 .App {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   min-height: 100vh;
+}
+
+.loginButton {
+  display: flex;
+  align-self: center;
+  height: max-content;
 }
 
 .leftSide {

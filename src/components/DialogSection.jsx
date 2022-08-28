@@ -54,15 +54,15 @@ export const DialogSection = ({
         sumOfSec: getSumOfSeconds(dateStringArray[1]),
         monthName: newDate.toLocaleString('ukr', { month: 'long' }),
       }
-      setDialogMessages([...dialogMessages, newMessage])
-      setInput('')
+      setDialogMessages([...dialogMessages, newMessage]);
+      setInput('');
 
-      setTimeout(() => emulateResponse(), getRandomTime())
+      setTimeout(() => emulateResponse(), getRandomTime());
     }
   }
 
   useEffect(() => {
-    localStorage.setItem(`messagesWith${contactID}`, JSON.stringify([...dialogMessages]))
+    localStorage.setItem(`messagesWith${contactID}`, JSON.stringify([...dialogMessages]));
   })
 
   return (

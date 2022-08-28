@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    // height: 22%;
 
     padding: 15px;
 
@@ -10,8 +9,19 @@
     border-bottom: #c8c8ca 0.5px solid;
   }
 
-  .imgContainer--user {
-    margin-bottom: 20px;
+  .userInfoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+    padding: 20px;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    color: #3b3b3b;
   }
 
   .searchContainer {
