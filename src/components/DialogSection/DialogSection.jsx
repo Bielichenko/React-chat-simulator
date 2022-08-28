@@ -71,19 +71,19 @@ export const DialogSection = ({
         <div className='imgContainer'>
           <img
             className='contactImg contactImg--main'
-            src={require(`../images/${contactID}.jpg`)}
+            src={require(`../../images/${contactID}.jpg`)}
             alt="contact-logo"
           />
           <img
             className='check'
-            src={require(`../images/check.png`)}
+            src={require(`../../images/check.png`)}
             alt="checkImg" />
         </div>
         <div className='contactName contactName--dialog'>{contactName}</div>
         <input
           className='navButton'
           type='image'
-          src={require(`../images/contacts.png`)}
+          src={require(`../../images/contacts.png`)}
           alt='кнопка'
           onClick={() => setIsContactsVisible(true)}></input>
       </div>
@@ -93,7 +93,7 @@ export const DialogSection = ({
             ? <div className='messageBox messageBox--received' key={message.id}>
               <img
                 className='contactImg'
-                src={require(`../images/${contactID}.jpg`)}
+                src={require(`../../images/${contactID}.jpg`)}
                 alt="contact-logo"
               />
               <div className='messageData'>
@@ -123,7 +123,7 @@ export const DialogSection = ({
           <input
             className='sendMessageIcon'
             type='image'
-            src={require(`../images/sendMessageIcon.jpg`)}
+            src={require(`../../images/sendMessageIcon.jpg`)}
             alt='кнопка'
             onClick={() => manageUserInput('Enter')}
           >
@@ -131,5 +131,5 @@ export const DialogSection = ({
         </div>
       </div>
     </div>
-  )
+  );
 }

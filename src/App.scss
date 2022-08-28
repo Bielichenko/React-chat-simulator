@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Josefin+Sans:ital,wght@0,500;1,300&family=Roboto:wght@300;500&display=swap');
 
-@import './styles/dialogSection.scss';
-@import './styles/chatsSection.scss';
-@import './styles/searchSection.scss';
+@import './components/DialogSection/dialogSection.scss';
+@import './components/ChatsSection/chatsSection.scss';
+@import './components/SearchSection/searchSection.scss';
 
 * {
   margin: 0;

@@ -4,9 +4,9 @@ import GoogleLogin from 'react-google-login';
 import classNames from 'classnames';
 
 import { getMessagesFromServer } from './components/ServerEmulator';
-import { SearchSection } from './components/SearchSection';
-import { ChatsSection } from './components/ChatsSection';
-import { DialogSection } from './components/DialogSection';
+import { SearchSection } from './components/SearchSection/SearchSection';
+import { ChatsSection } from './components/ChatsSection/ChatsSection';
+import { DialogSection } from './components/DialogSection/DialogSection';
 
 import './App.scss';
 import './styles/mobileVersion.scss';
@@ -24,11 +24,6 @@ export const App = () => {
   useEffect(() => {
     localStorage.setItem(`userName`, JSON.stringify(userName));
     localStorage.setItem(`userImg`, JSON.stringify(userImg));
-    // if (allContacts[0]) {
-    //   console.log(allContacts[0])
-    //   console.log(allContacts[1])
-    //   console.log(allContacts[2])
-    // }
   }, [userName, userImg])
 
   useEffect(() => {
@@ -36,7 +31,7 @@ export const App = () => {
       window.gapi.auth2.init({
         client_id: '235288329074-kofj294dbe4us1g46u0lvqjbvajj5p99', plugin_name: "chat",
       }).then(() => console.log('init ok'), () => console.log('init err'))
-    });
+    })
   }, [])
 
   const signIn = () => {
@@ -65,7 +60,11 @@ export const App = () => {
         </button>
         : <>
           <div className={
-            classNames({ visible: isContactsVisible }, { notVisible: !isContactsVisible }, { leftSide: true })
+            classNames(
+              { visible: isContactsVisible },
+              { notVisible: !isContactsVisible },
+              { leftSide: true },
+            )
           }>
             <div className="fixedContainer">
               <SearchSection
@@ -75,15 +74,26 @@ export const App = () => {
                 setInput={setInput}
                 setIsContactsVisible={setIsContactsVisible}
               />
-              <ChatsSection searchQuery={input} setContacts={setContacts} setIsContactsVisible={setIsContactsVisible} />
+              <ChatsSection
+                searchQuery={input}
+                setContacts={setContacts}
+                setIsContactsVisible={setIsContactsVisible}
+              />
             </div>
           </div>
 
           <div className={
-            classNames({ visible: !isContactsVisible }, { notVisible: isContactsVisible }, { rightSide: true })
+            classNames(
+              { visible: !isContactsVisible },
+              { notVisible: isContactsVisible },
+              { rightSide: true },
+            )
           }>
             <Routes>
-              <Route path="/" element={<p className='chooseContact'>Please, select a contact to start chatting!</p>} />
+              <Route
+                path="/"
+                element={<p className='chooseContact'>Please, select a contact to start chatting!</p>}
+              />
               {allContacts.map(contactObj => (
                 <Route
                   key={contactObj.id}
@@ -102,7 +112,7 @@ export const App = () => {
         </>
       }
     </div>
-  )
+  );
 }
 
 export default App;
