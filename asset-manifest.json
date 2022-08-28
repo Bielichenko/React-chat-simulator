@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/React-chat-simulator/static/css/main.0b560eb1.css",
-    "main.js": "/React-chat-simulator/static/js/main.8d340014.js",
+    "main.css": "/React-chat-simulator/static/css/main.c65ea990.css",
+    "main.js": "/React-chat-simulator/static/js/main.05fd96dd.js",
     "static/js/787.890e5f70.chunk.js": "/React-chat-simulator/static/js/787.890e5f70.chunk.js",
     "static/media/1.jpg": "/React-chat-simulator/static/media/1.fd649f64f08207176258.jpg",
     "static/media/1С.jpg": "/React-chat-simulator/static/media/1С.7642b62f025a810b544d.jpg",
     "static/media/find.png": "/React-chat-simulator/static/media/find.c6544d3156a8bde3d076.png",
-    "static/media/0.png": "/React-chat-simulator/static/media/0.89bd079e9b90687a1516.png",
     "static/media/sendMessageIcon.jpg": "/React-chat-simulator/static/media/sendMessageIcon.c274a12ce52f400c69b8.jpg",
     "index.html": "/React-chat-simulator/index.html",
-    "main.0b560eb1.css.map": "/React-chat-simulator/static/css/main.0b560eb1.css.map",
-    "main.8d340014.js.map": "/React-chat-simulator/static/js/main.8d340014.js.map",
+    "main.c65ea990.css.map": "/React-chat-simulator/static/css/main.c65ea990.css.map",
+    "main.05fd96dd.js.map": "/React-chat-simulator/static/js/main.05fd96dd.js.map",
     "787.890e5f70.chunk.js.map": "/React-chat-simulator/static/js/787.890e5f70.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0b560eb1.css",
-    "static/js/main.8d340014.js"
+    "static/css/main.c65ea990.css",
+    "static/js/main.05fd96dd.js"
   ]
 }
