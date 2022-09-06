@@ -1,4 +1,14 @@
-This is react chat simulator.
- Here I used React, SCSS (only my own styles), react router and local storage technology. I tried to make it adaptive and comfortable for all devices and also added authorization with Google.
+Demo: https://bielichenko.github.io/React-chat-simulator/
 
-link: https://bielichenko.github.io/React-chat-simulator/
+Technologies:
+React,
+JS,
+HTML,
+CSS / SCSS (my own styles).
+
+Additional technologies:
+React router,
+Local storage,
+Authorization with Google.
+
+
