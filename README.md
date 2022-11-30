@@ -4,7 +4,7 @@ Technologies:
 React,
 JS,
 HTML,
-CSS.
+SCSS.
 
 Additional technologies:
 React router,
